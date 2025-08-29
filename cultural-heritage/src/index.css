@@ -1,0 +1,141 @@
+/* Import Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* Custom Color Palette */
+:root {
+  --primary-bg: #AF8D5D;   /* main background */
+  --accent-1: #1B0907;     /* deep accent */ 
+  --accent-2: #3B0807;     /* medium accent */ 
+  --accent-3: #580C0C;     /* strong accent */ 
+  --secondary-bg: #97734F; /* optional light bg */
+  --white-bg: #FFFFFF;     /* white background */
+  --light-bg: #F8F9FA;     /* very light background */
+}
+
+/* Utility Classes for Color Theme */
+.bg-primary { background-color: var(--primary-bg); }
+.bg-accent1 { background-color: var(--accent-1); }
+.bg-accent2 { background-color: var(--accent-2); }
+.bg-accent3 { background-color: var(--accent-3); }
+.bg-secondary { background-color: var(--secondary-bg); }
+.bg-white { background-color: var(--white-bg); }
+.bg-light { background-color: var(--light-bg); }
+
+.text-primary { color: var(--primary-bg); }
+.text-accent1 { color: var(--accent-1); }
+.text-accent2 { color: var(--accent-2); }
+.text-accent3 { color: var(--accent-3); }
+.text-secondary { color: var(--secondary-bg); }
+.text-white { color: var(--white-bg); }
+.text-light { color: var(--light-bg); }
+
+.border-primary { border-color: var(--primary-bg); }
+.border-accent1 { border-color: var(--accent-1); }
+.border-accent2 { border-color: var(--accent-2); }
+.border-accent3 { border-color: var(--accent-3); }
+.border-secondary { border-color: var(--secondary-bg); }
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-bg);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-2);
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Hover effects */
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(187, 102, 83, 0.2);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent-1) 0%, var(--accent-2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@font-face {
+  font-family: "SlushyNostalgic";
+  src: url("/public/fonts/SlushyNostalgic.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ahsing";
+  src: url("/public/fonts/typogama-ahsing.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITCmedium";
+  src: url("/public/fonts/ITCBenguiatStdMediumCn.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Alegreya-BlackItalic";
+  src: url("/public/fonts/Alegreya-BlackItalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "BravenRegular";
+  src: url("/public/fonts/BravenRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
