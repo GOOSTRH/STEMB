@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, createElement } from "react";
-import gsap from "gsap";
+import { gsap } from "gsap";
 import "./TextType.css";
 
 const TextType = ({
