@@ -104,38 +104,40 @@ code {
   background-clip: text;
 }
 
+
+
 @font-face {
   font-family: "SlushyNostalgic";
-  src: url("/public/fonts/SlushyNostalgic.otf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  src: url("./fonts/SlushyNostalgic.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Ahsing";
-  src: url("/public/fonts/typogama-ahsing.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
+  src: url("./fonts/typogama-ahsing.otf") format("opentype");
 }
 
 @font-face {
   font-family: "ITCmedium";
-  src: url("/public/fonts/ITCBenguiatStdMediumCn.OTF") format("opentype");
-  font-weight: normal;
-  font-style: normal;
+  src: local("ITCmedium"), url("./fonts/ITCBenguiatStdMediumCn.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Alegreya-BlackItalic";
-  src: url("/public/fonts/Alegreya-BlackItalic.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "AlegreyaBlackItalic";
+  src: url("./fonts/Alegreya-BlackItalic.otf") format("opentype");
 }
-
 
 @font-face {
   font-family: "BravenRegular";
-  src: url("/public/fonts/BravenRegular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  src: url("./fonts/BravenRegular.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "AlegreyaSC";
+  src: url("./fonts/AlegreyaSC-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "vollkorn";
+  src: url("./fonts/vollkorn.regular.ttf") format("truetype");
+}
+

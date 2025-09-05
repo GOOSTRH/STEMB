@@ -1,0 +1,19 @@
+.glowing-text {
+  font-size: 4em;
+  color: #fff; /* Text color */
+  text-shadow: 
+    0 0 10px #ffffffd3, /* First shadow, small blur */
+    0 0 20px #ffffffa9, /* Second shadow, larger blur */
+    0 0 30px #ffffff67, /* Third shadow, even larger blur */
+    0 0 40px #ffffff2d; /* Fourth shadow, largest blur */
+} 
+
+.glowing-text-black {
+  font-size: 4em;
+  color: #fff; /* Text color */
+  text-shadow: 
+    0 0 10px #000000d3, /* First shadow, small blur */
+    0 0 20px #000000a9, /* Second shadow, larger blur */
+    0 0 30px #00000067, /* Third shadow, even larger blur */
+    0 0 40px #0000002d; /* Fourth shadow, largest blur */
+} 

@@ -1,32 +1,56 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import TextType from "./TextType"; // adjust path if needed
+
+const COMMENTS_PER_PAGE = 5;
 
 const Home = () => {
   const [nickname, setNickname] = useState("");
   const [comment, setComment] = useState("");
   const [comments, setComments] = useState([]);
+  // Replace with your Google Apps Script Web App URL
+  const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxpc1a_aIEroAPniXVY_NjyT1rCcP45HUIc68x9NFC12n87yxgsa0kC0L5yJLHq0F5AWw/exec";
+
+  // Load comments from Google Sheets on mount
+  useEffect(() => {
+    fetch(WEB_APP_URL)
+      .then(res => res.json())
+      .then(data => setComments(data.reverse())); // newest first
+  }, []);
   const [page, setPage] = useState(1);
 
-  const commentsPerPage = 10;
+  const totalPages = Math.ceil(comments.length / COMMENTS_PER_PAGE);
+  const currentComments = comments.slice(
+    (page - 1) * COMMENTS_PER_PAGE,
+    page * COMMENTS_PER_PAGE
+  );
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!nickname.trim() || !comment.trim()) return;
-
-    setComments([{ nickname, text: comment }, ...comments]);
+    const formData = new URLSearchParams();
+    formData.append("nickname", nickname);
+    formData.append("text", comment);
+    fetch(WEB_APP_URL, {
+      method: 'POST',
+      body: formData
+    })
+      .then(res => res.json())
+      .then(() => {
+        // Re-fetch comments after posting
+        fetch(WEB_APP_URL)
+          .then(res => res.json())
+          .then(data => setComments(data.reverse()));
+      });
     setNickname("");
     setComment("");
+    setPage(1);
   };
-
-  const startIndex = (page - 1) * commentsPerPage;
-  const currentComments = comments.slice(startIndex, startIndex + commentsPerPage);
-  const totalPages = Math.ceil(comments.length / commentsPerPage);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -35,8 +59,8 @@ const Home = () => {
       className="relative bg-cover bg-center min-h-screen"
       style={{
         backgroundImage: "url('/bgpic.png')",
-        backgroundSize: '100%, 100%',
-        backgroundPosition: 'center',
+        backgroundSize: "100%, 100%",
+        backgroundPosition: "center",
       }}
     >
       {/* Hero Section */}
@@ -56,8 +80,7 @@ const Home = () => {
               style={{ fontFamily: "SlushyNostalgic" }}
             />
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--accent-1)] to-[var(--accent-2)]">
-            </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--accent-1)] to-[var(--accent-2)]"></span>
           </h1>
           <p className="text-xl text-[var(--accent-3)] mb-8 max-w-3xl mx-auto">
             This is a website made for STEMB 2024-26.
@@ -100,12 +123,16 @@ const Home = () => {
             {currentComments.length > 0 ? (
               currentComments.map((c, i) => (
                 <div key={i} className="p-4">
-                  <p className="font-semibold text-[var(--accent-1)]">{c.nickname}</p>
+                  <p className="font-semibold text-[var(--accent-1)]">
+                    {c.nickname}
+                  </p>
                   <p className="text-[var(--accent-3)]">{c.text}</p>
                 </div>
               ))
             ) : (
-              <p className="p-4 text-[var(--accent-2)] text-center">No comments yet.</p>
+              <p className="p-4 text-[var(--accent-2)] text-center">
+                No comments yet.
+              </p>
             )}
           </div>
 

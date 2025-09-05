@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import gsap from 'gsap';
 
 const UCSP = () => {
   const groups = [
     { id: 1, name: "SUBANEN", img: "/images/group1.jpg", desc: "Where rivers carry stories and traditions live on" },
-    { id: 2, name: "TAUSUG", img: "/images/group2.jpg", desc: "The Tausug are an indigenous group primarily located in the Sulu Archipelago and paris of Zamboanga Peninsula." },
+    { id: 2, name: "TAUSUG", img: "/images/group2.jpg", desc: "The Tausug are an indigenous group primarily located in the Sulu Archipelago and parts of Zamboanga Peninsula." },
     { id: 3, name: "YAKAN", img: "/images/group3.jpg", desc: "The Yakan are one of the thirteen major Muslim ethnolinguistic groups in the Philippines." },
     { id: 4, name: "CHAVACANO", img: "/images/group4.jpg", desc: "Discover the rich traditions, authentic flavors, and ancient origins that shape our identity" },
   ];
+
+  const cardsRef = useRef([]);
+
+  useEffect(() => {
+    gsap.set(cardsRef.current, { y: 80, opacity: 0 });
+
+    gsap.to(cardsRef.current, {
+      y: 0,
+      opacity: 1,
+      duration: 0.8,
+      stagger: 0.3,
+      ease: "power3.out",
+    });
+  }, []);
 
   return (
     <div className="bg-[var(--light-bg)] min-h-screen">
@@ -46,12 +61,13 @@ const UCSP = () => {
       {/* Group Cards */}
       <section className="h-screen">
         <div className="flex h-full w-full">
-          {groups.map((group) => (
-            <Link
-              key={group.id}
-              to={`/group${group.id}`}
-              className="relative flex-1 rounded-none overflow-hidden transition-all duration-300 hover:flex-[2] hover:shadow-lg cursor-pointer"
-            >
+          {groups.map((group, i) => (
+             <Link
+                key={group.id}
+                to={`/group${group.id}`}
+                ref={(el) => (cardsRef.current[i] = el)}
+                className="relative flex-1 overflow-hidden opacity-0 translate-y-[200px] transition-all duration-300 hover:flex-[2] hover:shadow-lg cursor-pointer"
+              >
               {/* Background image */}
               <img
                 src={group.img}
@@ -63,9 +79,7 @@ const UCSP = () => {
               {/* Text content */}
               <div className="absolute bottom-0 p-8 text-center text-[var(--white-bg)] w-full">
                 <h2 className="text-5xl font-bold mb-3">{group.name}</h2>
-                <p className="text-base">
-                  "{group.desc}"
-                </p>
+                <p className="text-base">"{group.desc}"</p>
               </div>
             </Link>
           ))}

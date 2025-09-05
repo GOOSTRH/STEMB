@@ -9,12 +9,14 @@ import Group1 from './components/Group1';
 import Group2 from './components/Group2';
 import Group3 from './components/Group3';
 import Group4 from './components/Group4';
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/ucsp" element={<UCSP />} />
