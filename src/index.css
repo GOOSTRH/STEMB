@@ -141,3 +141,17 @@ code {
   src: url("./fonts/vollkorn.regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "perandorysemi";
+  src: url("./fonts/PerandorySemiCondensed.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "tanmoncheri";
+  src: url("./fonts/tan-mon-cheri.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "awesomelathusca";
+  src: url("./fonts/AwesomeLathusca.ttf") format("truetype");
+}

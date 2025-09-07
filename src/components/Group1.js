@@ -100,6 +100,7 @@ const Group1 = () => {
             <img
               src="/images/g1p1.jpg" // 🔥 replace with your image
               className="w-full h-full object-cover"
+              alt=""
             />
           </div>
 
@@ -146,6 +147,7 @@ const Group1 = () => {
             <img
               src="/images/g1p3.png" // 🔥 replace with your image
               className="w-full h-full object-cover"
+              alt=""
             />
           </div>
 
@@ -230,8 +232,8 @@ const Group1 = () => {
             >
               <img
                 src="/images/g1p7.png" // 🔥 replace with your image
-
                 className="w-full h-full object-cover"
+              alt=""
               />
             </div>
             <br/>
@@ -270,8 +272,8 @@ const Group1 = () => {
             >
               <img
                 src="/images/g1p8.jpg" // 🔥 replace with your image
-
                 className="w-full h-full object-cover"
+                alt=""
               />
             </div>
             <br/>
@@ -409,8 +411,8 @@ const Group1 = () => {
             >
               <img
                 src="/images/g1p10.jpg" // 🔥 replace with your image
-
                 className="w-full h-full object-cover"
+                alt=""
               />
             </div>
           </div>
@@ -441,6 +443,7 @@ const Group1 = () => {
             <img
               src="/images/g1p11.jpg" // 🔥 replace with your image
               className="h-full object-cover"
+              alt=""
             />
           </div>
           <div>
@@ -505,6 +508,7 @@ const Group1 = () => {
             <img
               src="/images/g1p12.jpg" // 🔥 replace with your image
               className="h-full object-cover"
+              alt=""
             />
           </div>
         </section>    
@@ -607,6 +611,7 @@ const Group1 = () => {
             <img
               src="/images/g1p14.jpg" // 🔥 replace with your image
               className="h-full object-cover"
+              alt=""
             />
           </div>
         </section>    
@@ -649,6 +654,7 @@ const Group1 = () => {
             <img
               src="/images/g1p15.jpg" // 🔥 replace with your image
               className="h-full object-cover"
+              alt=""
             />
           </div>
         </section>    
