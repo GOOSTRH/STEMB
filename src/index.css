@@ -155,3 +155,13 @@ code {
   font-family: "awesomelathusca";
   src: url("./fonts/AwesomeLathusca.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "ITCbenguiat";
+  src: url("./fonts/ITCBenguiatStdBookCn.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "DMsans";
+  src: url("./fonts/DMSans-Regular.ttf") format("truetype");
+}

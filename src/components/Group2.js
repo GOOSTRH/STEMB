@@ -14,29 +14,41 @@ const Group2 = () => {
             className="w-full overflow-hidden"
             style={{height:"60vh", marginBottom:"-5rem"}}
           >
-
             <img
               src="/images/group2/g2p1.png" // 🔥 replace with your image
               className="w-full h-full object-cover"
               alt=""
             />
-            
-
-
           </div>
           {/* title */}
-          <h1 
-            className="md:text-6xl mb-4 uppercase" 
-            style={{ fontFamily: "ITCmedium", fontSize: "20vh",lineHeight: "0", color:"rgba(0, 112, 26)" }}
-          >
-            The
-            <span 
-              className="block text-[var(--white-bg)"
-              style={{ fontFamily: "awesomelathusca", fontSize: "15vh", lineHeight: "1", color:"rgba(222, 49, 0)" }}
+          <div classname="flex relative" style={{maxWidth:"80vw", justifyContent:"flex-center", margin:"0 auto"}}>
+            <section
+              className="relative bg-[var(--dark-bg)] py-16 px-6"
+              style={{maxWidth:"60vw"}}
             >
-              tausug
-            </span>
-          </h1>
+              <h2
+                className="relative text-6xl font-extrabold mb-4 uppercase glowing-text-black text-justify"
+                style={{ fontFamily: "ITCbenguiat", fontSize: "25vh", lineHeight: "0", color:"rgba(0, 112, 26)"}}
+              >
+                The
+              </h2>
+              <p
+                className="relative uppercase tracking-wide text-sm font-medium text-[var(--accent-3)] glowing-text-black text-justify"
+                style={{ fontFamily: "awesomelathusca", fontSize: "20vh", lineHeight: "1", color:"rgba(222, 49, 0)" }}
+              >
+                tausug
+              </p>
+            <p
+              className="text-center text-2xl font-semibold mb-8 uppercase text-justify"
+              style={{fontSize:"5vh", color:"rgba(194,193,11)",textIndent:"25px", fontFamily:"DMsans"}}
+            >
+              Region IX
+            </p>
+            </section>
+          </div>
+          {/* region IX */}
+          <div>
+          </div>
           {/* description */}
           {/* bottom trim*/}
 
