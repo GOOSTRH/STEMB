@@ -16,14 +16,14 @@ const Group2 = () => {
           >
             <img
               src="/images/group2/g2p1.png" // 🔥 replace with your image
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-[0_70%]"
               alt=""
             />
           </div>
           {/* title */}
           <div classname="flex relative" style={{maxWidth:"80vw", justifyContent:"flex-center", margin:"0 auto"}}>
             <section
-              className="relative bg-[var(--dark-bg)] py-16 px-6"
+              className="relative bg-[var(--dark-bg)] pt-16 px-6"
               style={{maxWidth:"60vw"}}
             >
               <h2
@@ -46,12 +46,27 @@ const Group2 = () => {
             </p>
             </section>
           </div>
-          {/* region IX */}
-          <div>
-          </div>
-          {/* description */}
-          {/* bottom trim*/}
 
+          {/* description */}
+          <div classname="flex relative" style={{maxWidth:"80vw", justifyContent:"flex-center", margin:"0 auto"}}>
+            <section
+              className="flex relative bg-[var(--dark-bg)] pb-16 justify-end"
+            >
+              <p
+                className="relative tracking-wide text-sm font-medium text-[var(--accent-3)] glowing-text-black text-justify"
+                style={{ fontFamily: "tanmoncheri", fontSize: "3vh", lineHeight: "1.5", color:"rgba(244,222,174)", maxWidth:"40vw" }}
+              >
+                The Tausug are an indigenous group primarily located in the Sulu Archipelago and parts of Zamboanga Peninsula. The name Tausug is derived from “tau” meaning person and “sug” meaning sea current, reflecting their seafaring lifestyle.
+              </p>
+
+            </section>
+          </div>
+          {/* bottom trim*/}
+          <div className="flex flex-row justify-center items-center gap-2 py-4">
+            {Array.from({ length: 12 }).map((_, i) => (
+              <img key={i} src="/images/group2/trim1.png" alt="" className="h-8 w-auto" />
+            ))}
+          </div>
         </div>
 
         {/* 2nd section */}
