@@ -122,7 +122,7 @@ const Group1 = () => {
           </div>
 
           {/* Text Slot */}
-          <div className="text-left">
+          <div className="text-left ml-5">
             <p
               className="text-gray-700 leading-relaxed"
               style={{ fontFamily: "vollkorn", fontSize: "2vh",textIndent:"2em", color: "#ffffffff" }}
@@ -442,7 +442,7 @@ const Group1 = () => {
           >
             <img
               src="/images/g1p11.jpg" // 🔥 replace with your image
-              className="h-full object-cover"
+              className="w-full h-full object-cover"
               alt=""
             />
           </div>
@@ -507,7 +507,7 @@ const Group1 = () => {
           >
             <img
               src="/images/g1p12.jpg" // 🔥 replace with your image
-              className="h-full object-cover"
+              className="w-full h-full object-cover"
               alt=""
             />
           </div>
@@ -559,7 +559,7 @@ const Group1 = () => {
           style={{zIndex: 2, backgroundColor: "rgba(40, 46, 32, 0.7)", width: "60vw"}}
         >
           {/* Text Slot */}
-          <div className="text-lg mt-10 px-10">
+          <div className="text-lg my-10 px-10">
             <p
               className="text-justify leading-relaxed"
               style={{ fontFamily: "vollkorn", fontSize: "2.3vh", color: "#ffffffff" }}
@@ -610,7 +610,7 @@ const Group1 = () => {
           >
             <img
               src="/images/g1p14.jpg" // 🔥 replace with your image
-              className="h-full object-cover"
+              className="w-full h-full object-cover"
               alt=""
             />
           </div>

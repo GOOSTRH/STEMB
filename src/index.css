@@ -104,7 +104,9 @@ code {
   background-clip: text;
 }
 
-
+html, body {
+  overflow-x: hidden;
+}
 
 @font-face {
   font-family: "SlushyNostalgic";
