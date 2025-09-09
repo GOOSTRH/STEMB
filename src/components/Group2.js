@@ -62,19 +62,42 @@ const Group2 = () => {
             </section>
           </div>
           {/* bottom trim*/}
-          <div className="flex flex-row justify-center items-center gap-2 py-4">
-            {Array.from({ length: 12 }).map((_, i) => (
-              <img key={i} src="/images/group2/trim1.png" alt="" className="h-8 w-auto" />
+          <div className="flex flex-row justify-center items-center pt-4">
+            {Array.from({ length: 9 }).map((_, i) => (
+              <img key={i} src="/images/group2/g2p17.png" alt="" className="h-12 w-auto" />
             ))}
           </div>
         </div>
 
         {/* 2nd section */}
-          {/* background pic */}
           {/* title */}
-          {/* 5 images section */}
           {/* 3 sub titles section */}
-  
+        <div style={{backgroundColor:"rgba(146,145,110)"}}>
+          {/* background pic */}
+          <div style={{backgroundImage:"url('/images/group2/g2p18.png')"
+            , backgroundSize:"contain"
+            , backgroundPosition:"center"
+            , backgroundRepeat:"repeat"
+            , opacity :"0.06"
+          }}>
+          </div>
+          {/* 5 images section */}
+          <div classname="flex relative justify-center items-center" style={{maxWidth:"80vw", margin:"0 auto", height:"100vh"}}>
+
+            <div className="relative flex flex-col items-center justify-center text-center overflow-hidden" style={{width:"20vw", translateY:"-10vw", translateX:"20vw"}}>
+              <img
+                src="/images/group2/g2p2.png" // 🔥 replace with your image
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <div className="absolute inset-0 " style={{ backgroundColor: "rgba(40, 46, 32, 0.3)"}} />
+            </div>
+
+          </div>
+        </div>
+        
+
+
         {/* 3rd section */}
           {/* title */}
           {/* side pic */}
