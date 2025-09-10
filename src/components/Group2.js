@@ -69,6 +69,8 @@ const Group2 = () => {
           </div>
         </div>
 
+
+
         {/* 2nd section */}
         <div style={{backgroundColor:"rgba(146,145,110)", height:"100vh"}} className="relative">
           {/* background pic */}
@@ -253,7 +255,6 @@ const Group2 = () => {
 
         {/* 3rd section */}
         <div style={{ backgroundColor: "rgba(25, 39, 45)" }} className="relative w-full h-screen">
-          {/* Background image */}
           <div className="absolute inset-y-0 right-0">
             <img
               src="/images/group2/g2p7.png"
@@ -265,13 +266,13 @@ const Group2 = () => {
           {/* title */}
           {/* side pic */}
           {/* description */}
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_7fr] items-center pt-16"
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_5fr] items-center pt-16"
           style={{maxWidth:"80vw", justifyContent:"center", margin:"0 auto"}}>
 
             <p
               className="text-center text-2xl font-semibold mb-8 uppercase"
               style={{
-                fontSize: "5vh",
+                fontSize: "10vh",
                 color: "rgba(194,193,11)",
                 textIndent: "25px",
                 fontFamily: "DMsans",
@@ -280,16 +281,16 @@ const Group2 = () => {
             >
               01
             </p>
-            <section className="relative bg-[var(--dark-bg)] pt-16 px-6">
+            <section className="text-right relative bg-[var(--dark-bg)] pt-16" style={{marginRight:"18vw"}}>
               <h2
-                className="relative text-6xl font-extrabold mb-4 uppercase glowing-text-black text-justify"
-                style={{ fontFamily: "ITCbenguiat", fontSize: "20vh", lineHeight: "0", color:"rgba(20, 110, 176)"}}
+                className="relative text-6xl font-extrabold mb-4 uppercase glowing-text-black"
+                style={{ fontFamily: "ITCbenguiat", fontSize: "30vh", lineHeight: "0", color:"rgba(20, 110, 176)"}}
               >
                 Culture
               </h2>
               <p
-                className="relative uppercase tracking-wide text-sm font-medium text-[var(--accent-3)] glowing-text-black text-justify"
-                style={{ fontFamily: "awesomelathusca", fontSize: "16vh", lineHeight: "1", color:"rgba(255, 198, 88)" }}
+                className="relative uppercase tracking-wide text-sm font-medium text-[var(--accent-3)] glowing-text-black"
+                style={{ fontFamily: "awesomelathusca", fontSize: "24vh", lineHeight: "1", color:"rgba(255, 198, 88)" }}
               >
                 tradition
               </p>
@@ -300,13 +301,13 @@ const Group2 = () => {
           {/* description */}
           <div classname="flex relative" style={{maxWidth:"80vw", justifyContent:"flex-center", margin:"0 auto"}}>
             <section
-              className="flex relative bg-[var(--dark-bg)] pb-16 justify-end" style={{maxWidth:"60vw"}}
+              className="flex relative bg-[var(--dark-bg)] "
             >
               <p
-                className="relative tracking-wide text-sm font-medium text-[var(--accent-3)] glowing-text-black text-justify"
-                style={{ fontFamily: "tanmoncheri", fontSize: "3vh", lineHeight: "1.5", color:"rgba(244,222,174)", maxWidth:"40vw" }}
+                className="flex relative tracking-wide text-sm font-medium text-[var(--accent-3)] glowing-text-black text-justify"
+                style={{ fontFamily: "tanmoncheri", fontSize: "3vh", lineHeight: "1.5", color:"rgba(244,222,174)", maxWidth:"50vw"  }}
               >
-Pangalay Dance - it is also known as “fingernail dance.” Pangalay means gift offering — is one of the oldest traditional dances of the tausug. It predates Islam and Christianity in the Sulu Archipelago and still remains rooted in pre-Islamic cultural heritage. Dancers wear long, ornate metal extensions called “janggay” to accentuate flowing hand movements. The movements emphasize elegance and fluidity, mimicking ocean waves or bird wings through slow, continuous glares. It is often performed in weddings and festive occasions which is accompanied by traditional instruments like kulintang, gabbang, and agong.
+                Pangalay Dance - it is also known as “fingernail dance.” Pangalay means gift offering — is one of the oldest traditional dances of the tausug. It predates Islam and Christianity in the Sulu Archipelago and still remains rooted in pre-Islamic cultural heritage. Dancers wear long, ornate metal extensions called “janggay” to accentuate flowing hand movements. The movements emphasize elegance and fluidity, mimicking ocean waves or bird wings through slow, continuous glares. It is often performed in weddings and festive occasions which is accompanied by traditional instruments like kulintang, gabbang, and agong.
               </p>
 
             </section>
@@ -316,72 +317,168 @@ Pangalay Dance - it is also known as “fingernail dance.” Pangalay means gift
 
 
 
-
-
-
         {/* 4th section */}
-          {/* image */}
-        <section
-          className="relative flex flex-col text-white"
-          style={{
-            backgroundImage: "url('/images/group2/g2p8.png')", // 🔥 replace with your image
-            backgroundSize: "contain",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "80% 30%",
-            backgroundColor:"#0e100d"
-        }}>
-
-          {/* title */}
+        <div>
+            {/* image */}
           <section
-            className="relative bg-[var(--dark-bg)] py-16 px-6"
-          >
-            {/* Content */}
-            <h2
-              className="text-left font-extrabold mb-4 glowing-text-black pl-10"
-              style={{
-                fontFamily: "awesomelathusca",
-                fontSize: "20vh",
-                lineHeight: "1",
-                textAlign: "left"
-              }}
+            className="relative flex flex-col text-white"
+            style={{
+              backgroundImage: "url('/images/group2/g2p8.png')", // 🔥 replace with your image
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "120% 30%",
+              backgroundColor:"#0e100d"
+          }}>
+
+            {/* title */}
+            <section
+              className="relative bg-[var(--dark-bg)] py-16 px-6"
             >
-              RELIGION
-            </h2>
+              {/* Content */}
+              <h2
+                className="text-left font-extrabold mb-4 glowing-text-black pl-10"
+                style={{
+                  fontFamily: "awesomelathusca",
+                  fontSize: "20vh",
+                  lineHeight: "1",
+                  textAlign: "left"
+                }}
+              >
+                RELIGION
+              </h2>
+            </section>
           </section>
-        </section>
-        {/* trim */}
-        {/* description */}
-        <section
-          className="relative flex flex-col text-white" style={{backgroundColor:"#ab6100", height:"5px"}}
-        >
-        </section>
-
-
-        {/* description */}
-        <div classname="relative items-center justify-center"  style={{backgroundColor: "rgba(25, 39, 45)"}}>
+          {/* trim */}
+          {/* description */}
           <section
-            className="relative bg-[var(--dark-bg)] pb-16" style={{maxWidth:"80vw"}}
+            className="relative flex flex-col text-white" style={{backgroundColor:"#ab6100", height:"10px"}}
           >
-            <p
-              className="tracking-wide text-sm font-medium glowing-text-black text-justify"
-              style={{ fontFamily: "tanmoncheri", fontSize: "3vh", lineHeight: "1.5", color:"rgba(244,222,174)"}}
-            >
-             Islam was introduced in the late 14th century. According to Cesar Adib Majul (Islamic Historian). This introduction is largely attributed to Arab and Chinese merchants and missionaries, who arrived via trade routes. Tausug follows the mainstream branch of Islam, Sunni Islam, which is the largest branch worldwide. They also follow the practices like the Five Pillars of Islam: Shahada, Faith in one God (Allah) and Prophet Muhammad as His messenger. Salah, praying five times a day. Zakat, giving out to the poor. Sawm, fasting during Ramadan, and Hajj, pilgrimage to Mecca.Tausug Muslims strictly observe these pillars and teach them early to children is Madrasah (Islamic school/college). They have different religious celebrations like Ramadan, Eid al-Fitr, Eid al-Adha, and Maulid an-Nabi.
-
-            </p>
           </section>
+
+
+          {/* description */}
+          <div className="flex relative py-10 items-center justify-center"  style={{backgroundColor: "rgba(25, 39, 45)"}}>
+            <section
+              className="flex relative" style={{maxWidth:"80vw"}}
+            >
+              <p
+                className=" text-center tracking-wide text-sm font-medium glowing-text-black "
+                style={{ fontFamily: "tanmoncheri", fontSize: "3vh", lineHeight: "2", color:"#92916e"}}
+              >
+              Islam was introduced in the late 14th century. According to Cesar Adib Majul (Islamic Historian). This introduction is largely attributed to Arab and Chinese merchants and missionaries, who arrived via trade routes. Tausug follows the mainstream branch of Islam, Sunni Islam, which is the largest branch worldwide. They also follow the practices like the Five Pillars of Islam: Shahada, Faith in one God (Allah) and Prophet Muhammad as His messenger. Salah, praying five times a day. Zakat, giving out to the poor. Sawm, fasting during Ramadan, and Hajj, pilgrimage to Mecca.Tausug Muslims strictly observe these pillars and teach them early to children is Madrasah (Islamic school/college). They have different religious celebrations like Ramadan, Eid al-Fitr, Eid al-Adha, and Maulid an-Nabi.
+
+              </p>
+            </section>
+          </div>
         </div>
+
+
 
         {/* 5th section */}
           {/* title */}
           {/* image */}
           {/* description */}
-          
-        {/* 5th section */}
-          {/* image */}
-          {/* title */}
-          {/* bg color */}
-          {/* decription */}
+          <section
+          className="relative flex flex-col text-white items-center justify-center"
+          style={{
+            backgroundImage: "url('/images/group2/g2p19.png')", // 🔥 replace with your image
+            backgroundSize: "cover",
+            backgroundRepeat: "repeat",
+          }}>
+
+            <div className="grid grid-cols-1 md:grid-cols-[40fr_60fr] flex relative items-center justify-center" style={{ maxWidth:"80vw" }}>
+              {/* title */}
+              <section
+                className="relative bg-[var(--dark-bg)] pt-32 pb-16 px-6"
+                style={{maxWidth:"60vw"}}
+              >
+                <h2
+                  className="relative text-6xl font-extrabold uppercase glowing-text-black text-justify"
+                  style={{ fontFamily: "ITCbenguiat", fontSize: "20vh", lineHeight: "0", color:"#0dc520"}}
+                >
+                  arts
+                  <span style={{fontSize:"10vh"}}>
+                  &
+                  </span>
+                </h2>
+                <p
+                  className="relative uppercase tracking-wide text-sm font-medium text-[var(--accent-3)] glowing-text-black text-justify"
+                  style={{ fontFamily: "awesomelathusca", fontSize: "20vh", lineHeight: "1", color:"rgba(255,255,255)",textIndent:"3vw" }}
+                >
+                  crafts
+                </p>
+
+              </section>
+
+              {/* description */}
+              <div className="flex relative py-10 items-center justify-center">
+                  <section
+                    className="flex relative" style={{maxWidth:"80vw"}}
+                  >
+                    <p
+                      className=" text-center tracking-wide text-sm font-medium glowing-text-black "
+                      style={{ fontFamily: "tanmoncheri", fontSize: "3vh", lineHeight: "2", color:"#FFFFFF"}}
+                    >
+                      Pis Syabit, one of the most well-known Tausug crafts, is a square tapestry with elaborate geometric patterns. The name “pis” alludes to the pattern, and “syabit” indicated the hook-based weaving process. 
+                    </p>
+                  </section>
+              </div>
+            </div>
+            
+          </section>
+
+          {/* trim */}
+          <section
+            className="relative flex flex-col text-white" style={{backgroundColor:"#3e1603", height:"10px"}}
+          >
+          </section>
+
+
+          {/* description */}
+          <div className="flex relative pb-10 items-center justify-center grid grid-cols-1 md:grid-cols-[1fr_2fr]" style={{backgroundColor:"#19272d", alignItems:"stretch"}}>
+
+            <div className="w-full h-full overflow-hidden">
+              <img
+                src="/images/group2/g2p9.png" // 🔥 replace with your image
+                className="w-full h-full object-cover"
+                alt=""
+              />
+            </div>
+
+            <section
+              className="flex relative" style={{alignItems:"stretch"}}
+            >
+              
+              <section
+                className="relative flex flex-col text-white" style={{backgroundColor:"#3e1603", width:"70px", height:"auto"}}
+              >
+              </section>
+
+              <div className="grid-container" style={{height:""}}>
+                <h2
+                  className="grid-item row-1 relative text-6xl font-extrabold mb-4 uppercase text-center"
+                  style={{ fontFamily: "awesomelathusca", fontSize: "15vh", lineHeight: "1", color:"#19272d", backgroundColor:"#787756"}}
+                >
+                  language
+                </h2>
+                <p
+                  className="grid-item row-2 text-center tracking-wide text-sm font-medium"
+                  style={{ fontFamily: "tanmoncheri", fontSize: "5vh", lineHeight: "2", color:"#787756"}}
+                >
+                  The language is called “Bahasa Sug” which belongs to the Austronesian (Malayo-Polynesian) and is part of the Southern Bisayan subgroup—closely related to other Visayan languages. Due to migration, Bahasa sug is spoken in Zamboanga Peninsula alongside Cebuano and Chavacano.
+                </p>
+              </div>
+            </section>
+          </div>
+
+  <h2
+    className="grid-item row-1 relative text-6xl font-extrabold mb-4 uppercase text-center"
+    style={{ fontFamily: "awesomelathusca", fontSize: "15vh", lineHeight: "1", color:"#19272d", backgroundColor:"#ff0000ff"}}
+  >
+    WORK IN PROGRESS, IM SORRY EVERYONE, I WAS SICK FOR LIKE 3 DAYS AND COULDNT PROPERLY WORK ON THIS WEBSITE, I HAD FEVER I WAS IN MY BED FOR 2 DAYS AND WAS DIZZY FOR 1 DAY
+    I GAGED UP YESTERDAY WHEN CODING THIS WEBSITE, IM SICK OF THIS WEBSITE, BUT I WILL FINIHS THIS I PROMISE
+  </h2>
+
 
         {/* 6th section */}
           {/* title */}
