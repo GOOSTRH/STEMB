@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+
 import TextType from "./TextType"; // adjust path if needed
 
 const COMMENTS_PER_PAGE = 5;
@@ -45,13 +45,6 @@ const Home = () => {
     setNickname("");
     setComment("");
     setPage(1);
-  };
-
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
   };
 
   return (
