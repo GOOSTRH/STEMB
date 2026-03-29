@@ -21,27 +21,17 @@ const Navbar = () => {
             </Link>
           </div>
           
-          {/* Desktop Navigation - Home and UCSP */}
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link 
-              to="/" 
+            <Link
+              to="/"
               className={`font-medium transition-colors ${
-                isActive('/') 
-                  ? 'text-[var(--accent-1)] border-b-2 border-[var(--accent-1)]' 
+                isActive('/')
+                  ? 'text-[var(--accent-1)] border-b-2 border-[var(--accent-1)]'
                   : 'text-[var(--accent-3)] hover:text-[var(--accent-1)]'
               }`}
             >
               Home
-            </Link>
-            <Link 
-              to="/ucsp" 
-              className={`font-medium transition-colors ${
-                isActive('/ucsp') 
-                  ? 'text-[var(--accent-1)] border-b-2 border-[var(--accent-1)]' 
-                  : 'text-[var(--accent-3)] hover:text-[var(--accent-1)]'
-              }`}
-            >
-              UCSP
             </Link>
           </div>
 
@@ -70,17 +60,6 @@ const Navbar = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
-              </Link>
-              <Link 
-                to="/ucsp" 
-                className={`px-3 py-2 rounded-md text-sm font-medium ${
-                  isActive('/ucsp') 
-                    ? 'text-[var(--accent-1)] bg-[var(--secondary-bg)]' 
-                    : 'text-[var(--accent-3)] hover:text-[var(--accent-1)] hover:bg-[var(--secondary-bg)]'
-                }`}
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                UCSP
               </Link>
             </div>
           </div>

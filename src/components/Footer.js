@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -26,14 +25,6 @@ const Footer = () => {
                 <i className="fab fa-instagram text-xl"></i>
               </a>
             </div>
-          </div>
-
-          {/* UCSP Link */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4 text-[var(--secondary-bg)]">UCSP</h3>
-            <ul className="space-y-2">
-              <li><Link to="/ucsp" className="text-[var(--secondary-bg)] hover:text-[var(--primary-bg)] transition-colors">View All Groups</Link></li>
-            </ul>
           </div>
 
           {/* Resources */}
