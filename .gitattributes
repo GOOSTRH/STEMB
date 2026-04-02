@@ -1,0 +1,1 @@
+public/image/banner/*.svg filter=lfs diff=lfs merge=lfs -text
