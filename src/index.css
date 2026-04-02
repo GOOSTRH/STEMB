@@ -3,7 +3,7 @@
 
 /* Custom Color Palette */
 :root {
-  --primary-bg: #AF8D5D;   /* main background */
+  --primary-bg: #000000;   /* main background */
   --accent-1: #1B0907;     /* deep accent */ 
   --accent-2: #3B0807;     /* medium accent */ 
   --accent-3: #580C0C;     /* strong accent */ 
@@ -57,21 +57,25 @@ code {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--secondary-bg);
+  background: #FFFFFF;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--accent-1);
-  border-radius: 4px;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-2);
+  background: #333333;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #FFFFFF;
 }
 
 /* Smooth transitions */
 * {
-  transition: all 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
 /* Custom animations */
@@ -108,62 +112,223 @@ html, body {
   overflow-x: hidden;
 }
 
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
 @font-face {
   font-family: "SlushyNostalgic";
   src: url("./fonts/SlushyNostalgic.otf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Ahsing";
   src: url("./fonts/typogama-ahsing.otf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "ITCmedium";
-  src: local("ITCmedium"), url("./fonts/ITCBenguiatStdMediumCn.otf") format("opentype");
+  src: url("./fonts/ITCBenguiatStdMediumCn.otf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "AlegreyaBlackItalic";
+  font-family: "AlegreyaBlack";
+  src: url("./fonts/Alegreya-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AlegreyaBlack";
   src: url("./fonts/Alegreya-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "BravenRegular";
   src: url("./fonts/BravenRegular.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "AlegreyaSC";
   src: url("./fonts/AlegreyaSC-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "vollkorn";
   src: url("./fonts/vollkorn.regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "perandorysemi";
   src: url("./fonts/PerandorySemiCondensed.otf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "tanmoncheri";
   src: url("./fonts/tan-mon-cheri.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "awesomelathusca";
   src: url("./fonts/AwesomeLathusca.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "ITCbenguiat";
   src: url("./fonts/ITCBenguiatStdBookCn.otf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "DMsans";
   src: url("./fonts/DMSans-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("./fonts/BebasNeue-Regular.woff2") format("woff2"),
+       url("./fonts/BebasNeue-Regular.woff") format("woff"),
+       url("./fonts/BebasNeue-Regular.otf") format("opentype"),
+       url("./fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocogoosePro";
+  src: url("./fonts/Cocogoose-Pro-Regular-trial.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocogoosePro";
+  src: url("./fonts/Cocogoose-Pro-Italic-trial.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocogoosePro";
+  src: url("./fonts/Cocogoose-Pro-Light-trial.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocogoosePro";
+  src: url("./fonts/Cocogoose-Pro-Light-Italic-trial.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocogoosePro";
+  src: url("./fonts/Cocogoose-Pro-Semilight-trial.ttf") format("truetype");
+  font-weight: 350;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocogoosePro";
+  src: url("./fonts/Cocogoose-Pro-Semilight-Italic-trial.ttf") format("truetype");
+  font-weight: 350;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocogoosePro";
+  src: url("./fonts/Cocogoose-Pro-Thin-trial.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocogoosePro";
+  src: url("./fonts/Cocogoose-Pro-Thin-Italic-trial.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocogoosePro";
+  src: url("./fonts/Cocogoose-Pro-Ultralight-trial.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocogoosePro";
+  src: url("./fonts/Cocogoose-Pro-Ultralight-Italic-trial.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocogoosePro";
+  src: url("./fonts/Cocogoose-Pro-Bold-trial.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocogoosePro";
+  src: url("./fonts/Cocogoose-Pro-Bold-Italic-trial.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocogoosePro";
+  src: url("./fonts/Cocogoose-Pro-Darkmode-trial.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocogoosePro";
+  src: url("./fonts/Cocogoose-Pro-Darkmode-Italic-trial.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocogooseProLetterpress";
+  src: url("./fonts/Cocogoose-Pro-Letterpress-Regular-trial.ttf") format("truetype");
+  font-display: swap;
 }

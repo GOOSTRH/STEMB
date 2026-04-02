@@ -17,7 +17,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
               <i className="fas fa-globe-americas text-2xl text-[var(--accent-1)] mr-2"></i>
-              <span className="text-xl font-bold text-[var(--accent-1)]">Beevengers' Page</span>
+              <span className="text-xl font-bold text-[var(--accent-1)]">STEM B Digital YearBook</span>
             </Link>
           </div>
           
